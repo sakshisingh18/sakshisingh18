@@ -1,0 +1,199 @@
+body {
+  background-attachment: fixed;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #191327;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+h1 {
+  justify-content: center;
+  margin: 0px;
+  color: white;
+  font-size: 48px;
+}
+
+h3 {
+  color: white;
+  font-size: 40px;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 20px;
+  padding-right: 20px;
+  background-color: #7446ba;
+  position: sticky;
+  top: 0px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.icon-button {
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  text-decoration: underline;
+  text-shadow: 0px 0px 2px #28162b;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 70px;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: #b968c7;
+}
+
+.home {
+  width: 400px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.description-card {
+  background-color: #7446ba;
+  width: 92%;
+  height: 80%;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.description-text {
+  font-size: 20px;
+}
+
+.girl-img {
+  border-radius: 50%;
+  background-image: url("./images/girl.png");
+  height: 220px;
+  width: 220px;
+}
+
+.girl-img:hover {
+  background: url("./images/me.jpg");
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 5px #191327;
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding-right: 20px;
+  background-color: #7446ba;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.copyright {
+  position: absolute;
+  color: white;
+  right: 10px;
+  font-size: 10px;
+  padding-top: 20px;
+}
+
+@media (min-width: 651px) and (max-width: 920px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .icon-button {
+    font-size: 12px;
+  }
+
+  .parent {
+    column-gap: 0px;
+  }
+  .description-text {
+    font-size: 11px;
+  }
+  .girl-img {
+    background-image: url("./images/girl_med.png");
+    height: 110px;
+    width: 110px;
+  }
+  .girl-img:hover {
+    background-image: url("./images/me_med.jpg");
+    height: 110px;
+    width: 110px;
+  }
+  .copyright {
+    right: 5px;
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 650px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+  .parent {
+    column-gap: 0px;
+    flex-direction: column;
+  }
+  .home {
+    width: 200px;
+  }
+  .icon-button {
+    font-size: 10px;
+  }
+  .description-card {
+    width: 82%;
+  }
+  .description-text {
+    font-size: 6px;
+  }
+  .girl-img {
+    background-image: url("./images/girl_small.png");
+    height: 60px;
+    width: 60px;
+  }
+  .girl-img:hover {
+    background-image: url("./images/me_small.jpg");
+    height: 60px;
+    width: 60px;
+  }
+  .copyright {
+    right: 10px;
+    font-size: 6px;
+  }
+}
