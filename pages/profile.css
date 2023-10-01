@@ -112,6 +112,8 @@ a:visited {
 
   .footer {
     margin-top: 10px;
+    position: absolute;
+    width: 100%;
   }
   .copyright {
     right: 10px;

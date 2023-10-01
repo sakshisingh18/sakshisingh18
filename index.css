@@ -192,6 +192,11 @@ h3 {
     height: 60px;
     width: 60px;
   }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+  }
   .copyright {
     right: 10px;
     font-size: 6px;
